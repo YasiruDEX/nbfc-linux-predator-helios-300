@@ -1,3 +1,27 @@
+Quick Fan Control Commands
+-------------------------
+
+Show current fan status:
+```bash
+nbfc status
+```
+
+Set CPU fan to maximum speed (manual mode):
+```bash
+sudo nbfc set -f 0 -s 100
+```
+
+Set GPU fan to maximum speed (manual mode):
+```bash
+sudo nbfc set -f 1 -s 100
+```
+
+Return fans to auto mode (temperature-based):
+```bash
+sudo nbfc set -f 0 -a
+sudo nbfc set -f 1 -a
+```
+
 NoteBook FanControl
 ===================
 
